@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+   
+  
+  .container {
+    @apply m-[0_auto] w-95 max-w-7xl px-0 sm:w-90 md:w-80 lg:w-70;
+  }
+  
+    .btn {
+      @apply uppercase font-semibold text-white bg-lime-600 border-0 outline-none rounded-md inline-block whitespace-nowrap px-4 py-2;
+    }
+  }
+  

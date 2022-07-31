@@ -1,0 +1,110 @@
+Update Node
+------------------
+
+Update npm------  npm install npm@latest -g
+Clear npm cache--------   npm cache clean -f
+Install n-----     npm install -g n
+Update node to latest version------ n latest
+---------------------------------------
+
+
+Install and Update yarn
+----------------------
+Install yarn------- npm install -g yarn
+Update yarn------  yarn set version latest
+
+
+
+
+to know the version/ whether installed or not :
+-------------------------------------------------
+
+node version : node -v
+npm version : npm -v
+yarn version : yarn -v
+
+
+
+step 1. node npm and yarn should be installed.
+step 2. pretier, eslint, Path autocomplete should be installed.
+--------------------------------------------------------------
+
+step 3: in terminal (bash)
+
+yarn add -D eslint prettier
+npx install-peerdeps --dev eslint-config-airbnb-base
+yarn add -D eslint-config-prettier eslint-plugin-prettier
+
+step 4:
+touch .eslintrc
+
+
+
+step 5:
+{
+    "extends": ["prettier", "airbnb-base"],
+    "parserOptions": {
+      "ecmaVersion": 12
+    },
+    "env": {
+      "commonjs": true,
+      "node": true,
+      "browser": true
+    },
+    "rules": {
+      "no-console": 0,
+      "indent": 0,
+      "linebreak-style": 0,
+      "prettier/prettier": [
+        "error",
+        {
+          "trailingComma": "es5",
+          "singleQuote": true,
+          "printWidth": 100,
+          "tabWidth": 4,
+          "semi": true
+        }
+      ]
+    },
+    "plugins": ["prettier"]
+  }
+
+step: check package.json
+
+{
+  "devDependencies": {
+    "eslint": "8.2.0",
+    "eslint-config-airbnb-base": "15.0.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-import": "2.25.2",
+    "eslint-plugin-prettier": "^4.0.0",
+    "prettier": "^2.6.2"
+  }
+}
+
+
+step 6:(for quokka setup) in terminal (bash)
+
+npm i jsdom
+
+step 7: (for quokka setup)  in c drive---> users --->user ---> .quokka --->config.json
+
+{
+  "pro": false,
+
+  "plugins": ["jsdom-quokka-plugin"]
+}
+
+step 8: close vs code and open again
+
+
+and start noding :)
+if needed create a file under  root named .quokka paste this for dom dependency
+
+{
+    "plugins": ["jsdom-quokka-plugin"],
+    "jsdom": {"file": "./public/index.html"}
+  }
+
+
+
