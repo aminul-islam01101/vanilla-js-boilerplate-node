@@ -100,6 +100,12 @@ step 8: close vs code and open again
 
 and start noding :)
 
+if needed create a file under  root named .quokka paste this for dom dependency
+
+{
+    "plugins": ["jsdom-quokka-plugin"],
+    "jsdom": {"file": "./public/index.html"}
+  }
 
 
 
